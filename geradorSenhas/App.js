@@ -32,9 +32,8 @@ export default function App() {
         <Text style={styles.textButton}>Gerar Senha</Text>
       </TouchableOpacity>
       <Modal visible={modalVisible} animationType='fade' transparent={true}>
-        <ModalPassword/>
+        <ModalPassword senha={senhaGerada} fecharModal={() => setModaVisible(false)}/>
       </Modal>
-      <Text style={styles.genText}>{senhaGerada}</Text>
     </View>
   );
 }
