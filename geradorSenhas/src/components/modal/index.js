@@ -36,13 +36,13 @@ export function ModalPassword({senha, fecharModal, salvarSenha}) {
 
 const styles = StyleSheet.create({
     container:{
-        backgroundColor: "rgba(24, 24, 24, 0.6)",
+        backgroundColor: "rgba(10, 10, 10, 0.6)",
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
     },
     content:{
-        backgroundColor: '#fff',
+        backgroundColor: '#0C2050',
         width: '85%',
         paddingTop: 24,
         paddingBottom: 24,
@@ -53,11 +53,11 @@ const styles = StyleSheet.create({
     title:{
         fontSize: 25,
         fontWeight: 'bold',
-        color: '#000',
+        color: '#0DA5F4',
         paddingBottom: 18,
     },
     innerPassword:{
-        backgroundColor: '#e6e6e6',
+        backgroundColor: '#0DA5F4',
         width: '90%',
         padding: 14,
         borderRadius: 8,
@@ -65,6 +65,7 @@ const styles = StyleSheet.create({
     text:{
         textAlign: 'center',
         fontWeight: 'bold',
+        color: '#fff',
     },
     buttonArea:{
         flexDirection: 'row',
@@ -72,17 +73,20 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'space-between',
         marginTop: 14,
+        gap: 5,
     },
     buttonBack:{
         flex: 1,
         alignItems: 'center',
+        backgroundColor: '#EC4747',
         padding: 8,
+        borderRadius: 8,
     },
     buttonSave:{
         flex: 1,
         alignItems: 'center',
         padding: 8,
-        backgroundColor: '#333',
+        backgroundColor: '#07734B',
         borderRadius: 8,
     },
     buttonTextSave:{
@@ -91,6 +95,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
     },
     buttonTextBack:{
+        color: '#fff',
         fontSize: 14,
         fontWeight: 'bold',
     },

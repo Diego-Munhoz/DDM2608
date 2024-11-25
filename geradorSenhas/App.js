@@ -41,14 +41,14 @@ function HomeScreen({ navigation }) {
   return (
     <View style={styles.container}>
       <Image 
-        source={require('./src/img/logolock.png')}
+        source={require('./src/img/logoGenePassword.png')}
         style={styles.logo}
       />
-      <Text style={styles.title}>LockGen</Text>
+      <Text style={styles.title}>G3n3P4sSW0rD</Text>
       <TouchableOpacity onPress={gerarSenha} style={styles.button} >
         <Text style={styles.textButton}>Gerar Senha</Text>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.button2} >
+      <TouchableOpacity style={styles.button2} onPress={salvarSenha}>
         <Text style={styles.textButton2}>Ver Senhas Salvas</Text>
       </TouchableOpacity>
       <Modal visible={modalVisible} animationType='fade' transparent={true}>
@@ -72,7 +72,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#0C2050',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -83,9 +83,10 @@ const styles = StyleSheet.create({
     fontSize: 28,
     fontWeight: 'bold',
     marginBottom: 20,
+    color: '#0DA5F4',
   }, 
   button:{
-    backgroundColor: '#333',
+    backgroundColor: '#0DA5F4',
     width: '70%',
     height: 50,
     borderRadius: 8,
@@ -93,12 +94,12 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   button2:{
-    backgroundColor: '#fff',
+    backgroundColor: '#0C2050',
     width: '70%',
     height: 50,
     borderRadius: 8,
     borderWidth: 2,
-    borderColor: '#333',
+    borderColor: '#0DA5F4',
     alignItems: 'center',
     justifyContent: 'center',
     marginTop: 10,
@@ -109,7 +110,7 @@ const styles = StyleSheet.create({
     fontSize: 18,
   },
   textButton2:{
-    color: '#333',
+    color: '#0DA5F4',
     fontWeight: 'bold',
     fontSize: 18,
   },
